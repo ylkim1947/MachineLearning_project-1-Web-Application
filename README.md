@@ -1,4 +1,9 @@
 # MachineLearning-Web-Application
+### [시연 gif]
+
+<img src="https://user-images.githubusercontent.com/51395479/212488925-dc6cd217-34aa-4c51-8954-70aed9ff4be9.gif" width="60%" />
+
+
 
 ## 1. Goal of this project
 
