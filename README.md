@@ -1,7 +1,4 @@
 # MachineLearning-Web-Application
-### [시연 gif]
-
-<img src="https://user-images.githubusercontent.com/51395479/212488925-dc6cd217-34aa-4c51-8954-70aed9ff4be9.gif" width="60%" />
 
 
 
@@ -33,3 +30,6 @@
 ## 5. Web application
 <img src="https://user-images.githubusercontent.com/51395479/212487618-0e7fc83a-73e4-4438-9685-3b11677cf76c.png" width="25%"/>
 
+## 6. 시연 
+
+<img src="https://user-images.githubusercontent.com/51395479/212488925-dc6cd217-34aa-4c51-8954-70aed9ff4be9.gif" width="60%" />
