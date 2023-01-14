@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h3>yl_kim's</h3><h3>portpolio</h3>
+								<p><h1>당뇨 위험도 알림 서비스<br /></h1>
+								<h2>식생활 개선 유도 웹페이지 개발</h2></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#about">result</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="../static/images/pic01.jpg" alt="" /></span>
+								<p> <h2>당뇨란?</h2>당뇨란 혈액 내 너무 많은 포도당이 있는 여러가지 증세를 일컫는 이름입니다.
+									췌장이 인슐린을 생산하지 못하거나 생산하는 인슐린 양이 충분치 못하여 적절히 작용하지 못하는 경우에 생깁니다.
+									인슐린이 제 역할을 하지 못하면, 포도당이 혈액 내에 축적되어 고혈당 수치로 이어지게 되며 이는 당뇨와 관련된 여러가지 건강상의 문제를 야기합니다. .
+								</p>
+								<p> <h2> 다같은 당뇨 일까요? </h2>
+									1형 당뇨는 덜 흔하며, 유전과 관련이 있습니다. 주로 아동과 청년에게 많이 나타나지만, 아무 나이에나 걸릴 수 있습니다.
+									<br>2형 당뇨는 생활습관과 관련된 질환으로 모든 당뇨 환자의 80-90%를 차지합니다. 2형 당뇨는 보통성인에게 나타나지만, 이제는 더 젊은 사람들이나 심지어 아동들도 생활습관 질환에 걸립니다. 
+									<br><span style="color:rgb(109, 108, 108);"> <font size="-1">참고 문헌: <a href="https://www.healthylivingnt.org.au/system/files/f/42WhatIs_2010_Korean_web.pdf">당뇨협회에서 발간한 당뇨정보 시리즈</a></font></span>
+									<br>
+									<br>
+
+									<strong>생활 습관을 체크해보세요! >>  <font size="+1"><a href="#work">당뇨위험도 평가</a></strong></font>									
+								</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<span class="image main"><img src="../static/images/pic02.jpg" alt="" /></span>
+								<p> 몇 가지, 생활 습관들을 체크하여, 당뇨 위험군인지 확인해보세요~ <br>
+									62686 개의 데이터를 통해, 당뇨 가능성 여부를 체크해 드립니다. 
+								</p>
+								<p><form id="form_id" action="/predict" method="post" action="form-action.php">
+                                    <div class="form-group">
+                                        <h1>당뇨 예측</h1>
+                                        <br>
+										<br>										
+                                        <div class="element">
+                                            <label for="inputPassword5"><h3><strong>신장</strong></h3></label><br>
+                                            <input name ="HE_ht" type="number"  min="0" max="200"step="1" class="form-control" value=180>
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>체중</strong></h2></label>
+                                            <input name ="HE_wt" type="number"  min="0" max="200"step="1"class="form-control" value=55>
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>허리둘레</strong></h2></label>
+                                            <input name ="HE_wc" type="number"  min="0" max="100"step="1"class="form-control" value=30>
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>체질량지수(BMI)</strong></h2></label>
+                                            <input name ="HE_BMI" type="number"  min="0" max="100"step="0.1"class="form-control" value=50>
+                                        </div>
+
+										<br>
+                                        <br>
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong> 하루 평균 수면 (시간)</strong></h2></label>
+                                            <input name ="BP16" type="number"  min="0" max="24"step="1"class="form-control" value=6>
+                                        </div>                  
+                                        <br>
+                                        <br>
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>평소 하루에 앉아서 보내는 시간(시간)</strong></h2></label>
+                                            <input name ="BE8_1" type="number"  min="0" max="24"step="1"class="form-control" value=5>
+                                        </div>  
+
+									    <br>
+                                        <br>
+                                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>음주 시작 연령(만)</strong></h2></label><br>
+                                            <input name ="BD2" type="number"  min="1" max="80"step="1"class="form-control" value=30>
+                                            
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+
+                                        <div class="element">
+                                            <label for="inputPassword6"><h2><strong>1주일간 걷기 일수</strong></h2></label>
+											<label for="none100"> <br> </label>
+                                            <input name ="BE3_31" id="none" type="radio" value=1 checked>
+                                            <label for="none">전혀 하지 않음</label>
+                    
+                                            <input name ="BE3_31" id="day1" type="radio" value=2 >
+                                            <label for="day1">1일</label>
+                    
+                                            <input name ="BE3_31" id="day2" type="radio" value=3>
+                                            <label for="day2">2일</label>
+                    
+                                            <input name ="BE3_31" id="day3" type="radio" value=4>
+                                            <label for="day3">3일</label>
+											<br>
+                                            <input name ="BE3_31" id="day4" type="radio" value=5>
+                                            <label for="day4">4일</label>
+                    
+                                            <input name ="BE3_31" id="day5" type="radio" value=6>
+                                            <label for="day5">5일</label>
+                    
+                                            <input name ="BE3_31" id="day6" type="radio" value=7>
+                                            <label for="day6">6일</label>
+                    
+                                            <input name ="BE3_31" id="day7" type="radio" value=8>
+                                            <label for="day7">매일</label>
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+                    
+                    
+                                        <div class="element">
+                                            <label for="inputPassword5"><h2><strong>1년간 체중 변화 여부</strong></h2></label>
+											<label for="none99"> <br> </label>
+                                            <input name ="BO1_1" id="none1" type="radio" value=1 checked>
+											<label for="none1">변화 없음</label>
+
+
+                                            <input name ="BO1_1" id="day11" type="radio" value=2>								
+                                            <label for="day11">체중감소</label>
+
+                                            <input name ="BO1_1" id="day21" type="radio" value=3>
+                                            <label for="day21">체중증가</label>
+
+                                            <input name ="BO1_1" id="day31" type="radio" value=4 >
+                                            <label for="day31">모름</label>
+
+                                        </div>
+                    
+                                        <br>
+                                        <br>
+                    
+                                        <div class="element">
+
+                                            <label for="inputPassword5"><h2><strong>외식 횟수</strong></h2></label>
+											<label for="none99"> <br> </label>
+                                            <input name ="L_OUT_FQ" id="none2" type="radio" value=1 checked>
+                                            <label for="none2">하루 2회 이상</label>
+                    
+                                            <input name ="L_OUT_FQ" id="day12" type="radio" value=2>
+                                            <label for="day12">하루 1회</label>
+                    
+                                            <input name ="L_OUT_FQ" id="day22" type="radio" value=3>
+                                            <label for="day22">주 5~6회 </label>
+                    
+                                            <input name ="L_OUT_FQ" id="day32" type="radio" value=4>
+                                            <label for="day32">주 3~4회</label>
+                    
+                                            <input name ="L_OUT_FQ" id="day42" type="radio" value=5>
+                                            <label for="day42">주 1~2회</label>
+                    
+                                            <input name ="L_OUT_FQ" id="day52" type="radio" value=6>
+                                            <label for="day52">월 1~3회</label>
+                    
+                                            <input name ="L_OUT_FQ" id="day62" type="radio" value=7>
+                                            <label for="day62">거의 안함</label>
+                                       
+                                            <input name ="L_OUT_FQ" id="day72" type="radio" value=9>
+                                            <label for="day72">모름</label>
+
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <input type="submit" value="예측 결과">
+									
+
+									<br>
+									<br>
+<!--                                </form></p>
+								<p><form id="form_id" action="/predict" method="post">
+									{% if ml_result == 2 %}
+										<span class="result_lable">
+											<h1><strong> 생활습관을 개선해야겠어요ㅜ</strong></h1> 
+										</span>
+									{% elif ml_result == 1 %}
+										<span class="result_lable">
+											<h1><strong>건강한 생활습관을 갖고 계시네요~^^</strong></h1> 
+										</span>
+									{% endif %}
+								</form></p>
+-->								
+							</article>
+						<!-- About -->
+						<article id="about">
+							<h2 class="major">RESULT</h2>
+							<span class="image main"><img src="../static/images/pic03.jpg" alt="" /></span>
+							</form></p>
+							<p><form id="form_id" action="/predict" method="post">
+								{% if ml_result == 2 %}
+									<span class="result_lable">
+										<h1><strong> 생활습관을 개선해야겠어요ㅜ</strong></h1> 
+									</span>
+								{% elif ml_result == 1 %}
+									<span class="result_lable">
+										<h1><strong>건강한 생활습관을 갖고 계시네요~^^</strong></h1> 
+									</span>
+								{% endif %}
+							</form></p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.
+
+								<br>
+								<br>
+								<strong>우리나라 사람들의 생활 습관들 살펴볼까요? >>  <font size="+1"><a href="#about">생활 습관 자료</a></strong></font>
+
+							</p>
+						</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>

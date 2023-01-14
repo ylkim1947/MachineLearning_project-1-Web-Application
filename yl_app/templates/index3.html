@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>ylkim's Model as a Flask API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<h1>당뇨 예측</h1>
+<div class="agile-its">
+    <h2>Flask with ML Web Service</h2>
+    <div class="w3layouts">
+        <div class="photos-upload-view">
+
+            <form id="form_id" action="/predict" method="post" > <!--</form>action="form-action.php">-->
+                <div class="form-group">
+                    <h1>Red Wine Quality  prediction</h1>
+                    <div class="element">
+                        <label for="inputPassword5">신장</label><br>
+                        <input name ="HE_ht" type="number"  min="0" max="200"step="1" class="form-control" value=180>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">체중</label><br>
+                        <input name ="HE_wt" type="number"  min="0" max="200"step="1"class="form-control" value=55>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">허리둘레</label><br>
+                        <input name ="HE_wc" type="number"  min="0" max="100"step="1"class="form-control" value=30>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">체질량지수(BMI)</label><br>
+                        <input name ="HE_BMI" type="number"  min="0" max="100"step="0.1"class="form-control" value=22>
+                    </div>
+
+                    <br>
+                    <br>
+                
+                    <div class="element">
+                        <label for="inputPassword5">1주일간 걷기 일수</label><br>
+                        <label for="none">전혀 하지 않음</label>
+                        <input name ="BE3_31" id="none" type="radio" value=1>
+
+                        <label for="day1">1일</label>
+                        <input name ="BE3_31" id="day1" type="radio" value=2>
+
+                        <label for="day2">2일</label>
+                        <input name ="BE3_31" id="day2" type="radio" value=3>
+
+                        <label for="day3">3일</label>
+                        <input name ="BE3_31" id="day3" type="radio" value=4>
+
+                        <label for="day4">4일</label>
+                        <input name ="BE3_31" id="day4" type="radio" value=5>
+
+                        <label for="day5">5일</label>
+                        <input name ="BE3_31" id="day5" type="radio" value=6>
+
+                        <label for="day6">6일</label>
+                        <input name ="BE3_31" id="day6" type="radio" value=7>
+
+
+                        <label for="day7">매일</label>
+                        <input name ="BE3_31" id="day7" type="radio" value=8>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">음주 시작 연령(만)</label><br>
+                        <input name ="BD2" type="number"  min="1" max="80"step="1"class="form-control" value=30>
+                        
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">1년간 체중 변화 여부</label><br>
+                        <label for="none">변화 없음</label>
+                        <input name ="BO1_1" id="none" type="radio" value=1>
+
+                        <label for="day1">체중감소</label>
+                        <input name ="BO1_1" id="day1" type="radio" value=2>
+
+                        <label for="day2">체중증가</label>
+                        <input name ="BO1_1" id="day2" type="radio" value=3>
+
+                        <label for="day3">모름</label>
+                        <input name ="BO1_1" id="day3" type="radio" value=9>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">외식 횟수</label><br>
+                        <label for="none">하루 2회 이상</label>
+                        <input name ="L_OUT_FQ" id="none" type="radio" value=1>
+
+                        <label for="day1">하루 1회</label>
+                        <input name ="L_OUT_FQ" id="day1" type="radio" value=2>
+
+                        <label for="day2">주 5~6회 </label>
+                        <input name ="L_OUT_FQ" id="day2" type="radio" value=3>
+
+                        <label for="day3">주 3~4회</label>
+                        <input name ="L_OUT_FQ" id="day3" type="radio" value=4>
+
+                        <label for="day4">주 1~2회</label>
+                        <input name ="L_OUT_FQ" id="day4" type="radio" value=5>
+
+                        <label for="day5">월 1~3회</label>
+                        <input name ="L_OUT_FQ" id="day5" type="radio" value=6>
+
+                        <label for="day6">거의 안함</label>
+                        <input name ="L_OUT_FQ" id="day6" type="radio" value=7>
+
+
+                        <label for="day7">모름</label>
+                        <input name ="L_OUT_FQ" id="day7" type="radio" value=9>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="element">
+                        <label for="inputPassword5">평소 하루에 앉아서 보내는 시간(시간)</label>
+                        <input name ="BE8_1" type="number"  min="0" max="24"step="1"class="form-control" value=5>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+
+                <input type="submit" value="예측 결과">
+                <br>
+                {% if ml_result ==1  %}
+                    <span class="result_lable">
+                        <h1><strong> 생활 습관을 개선해야겠어요ㅜ</strong></h1> 
+                    </span>
+                {% else %}
+                    <span class="result_lable">
+                        <h1><strong>건강한 생활 습관을 갖고 계시네요~^^</strong></h1> 
+                    </span>
+
+                {% endif %}
+                <!--<input type="submit">-->
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
