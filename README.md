@@ -15,21 +15,21 @@
 <img src="https://user-images.githubusercontent.com/51395479/212480408-c630b159-3311-498d-a430-2b3dab2a9b89.png" width=286 height=354/>
 
      
-## 3. Data for ML model
+## 3. Data for ML model (Model_Pickling.ipynb)
 
 국민건강영양조사데이터 (2013~2020년)
 
 <img src="https://user-images.githubusercontent.com/51395479/212484452-240cb3bd-964a-43b4-aa46-3561016b3a5c.png" width="45%"/>  <img src="https://user-images.githubusercontent.com/51395479/212485661-307010cc-691b-4f1e-be68-66008e92523c.png" width="20%"/>    <img src="https://user-images.githubusercontent.com/51395479/212483910-725f0e73-4553-492d-9ac3-d670b543cd2b.png" width="25%"/>
 
 
-## 4. Making ML model & pickling
+## 4. Making ML model & pickling (Model_Pickling.ipynb)
 
 <img src="https://user-images.githubusercontent.com/51395479/212486498-5bf270d4-d1f4-46e2-ba9b-9ecca4f96909.png" width="40%" />
 
 
-## 5. Web application
+## 5. Web application (yl_app)
 <img src="https://user-images.githubusercontent.com/51395479/212487618-0e7fc83a-73e4-4438-9685-3b11677cf76c.png" width="25%"/>
 
-## 6. 시연 
+## 6. 시연 (yl_app)
 
 <img src="https://user-images.githubusercontent.com/51395479/212488925-dc6cd217-34aa-4c51-8954-70aed9ff4be9.gif" width="60%" />
